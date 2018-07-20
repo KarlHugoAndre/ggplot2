@@ -32,7 +32,7 @@
 #' ggplot(df, aes(x)) + stat_ecdf(geom = "step", pad = FALSE)
 #'
 #' # Multiple ECDFs
-#' ggplot(df, aes(x, colour = g)) + stat_ecdf()
+#' ggplot(df, aes(x,group=g colour = g)) + stat_ecdf()
 stat_ecdf <- function(mapping = NULL, data = NULL,
                       geom = "step", position = "identity",
                       ...,
